@@ -1,6 +1,6 @@
-# MY Portfolio
+# My Portfolio
 
-This is my online portfolio. You can see it [here!](conderodrigo98.github.io)
+This is my online portfolio. You can see it [here!](https://conderodrigo98.github.io)
 
 ### Technologies used
 
