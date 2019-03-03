@@ -17,8 +17,6 @@ p{
 	color: grey;
 	text-align: center;
 	margin-left: 10%;
-}
-p:first-of-type{
 	margin-top: 25%;
 }
 
@@ -28,4 +26,14 @@ p:first-of-type{
 	-webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 1440px){
+	p{
+		font-size: 1.5rem;
+		margin-top: 25%;
+		margin-left: 0;
+	}
+	img{
+		margin-left: 2.5%;
+	}
+}
 

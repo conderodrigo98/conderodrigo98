@@ -9,7 +9,6 @@ h1{
 	text-align: center;
 	font-size: 7rem;
 	margin: 15% 0 2% 0;
-	/*font-family: 'Rock Salt', sans-serif;*/
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 100;
 	visibility: hidden;
@@ -55,3 +54,11 @@ a:hover{
 	color: cyan;
 }
 
+@media (max-width: 480px){
+	h1{
+		font-size: 5rem;
+	}
+	.btn{
+		margin-bottom: 5%;
+	}
+}
