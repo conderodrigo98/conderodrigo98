@@ -45,6 +45,28 @@ a:hover{
 	padding: 0 10% 0 10%;
 }
 
+.upbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 10%;
+	width: 100%;
+	border-bottom-style: solid;
+	border-image: linear-gradient(to bottom, magenta, cyan) 1 100%;
+	z-index: 1;
+	display: none;
+	margin-right: 0;
+	padding-right: 0;
+	background-color: white;
+}
+#show_bar{
+	color: magenta !important;
+	font-size: 2rem;
+	position: fixed;
+	top: 1%;
+	right: 5%;
+}
+
 @media screen and (max-width: 1440px){
 	h1{
 		font-size: 3rem;
@@ -56,8 +78,25 @@ a:hover{
 @media screen and (max-width: 1024px){
 	.sidebar{
 		display: none;
+
+	}
+	.upbar{
+		display: block;
 	}
 	.row{
 		margin-left: 0;
+	}
+	h1{
+		margin: 0 0 0 0 ;
+		font-size: 2rem;
+	}
+	.btn{
+		font-size: 1.5rem;
+		color: magenta;
+		background-color: transparent;
+		border-color: cyan;
+		z-index: 100;
+		margin: 0 0.5% 1% 1%;
+		display: none;
 	}
 }

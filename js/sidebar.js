@@ -28,4 +28,20 @@ $(document).ready(()=>{
 		$(this).css("background-color", "white").css("text-align", "left");
 	});
 
+	//mobile menu dropdown
+	var showing = false;
+	$("#show_bar").click(function(){
+		if(showing){
+			$(".btn").css("display", "none");
+			$(this).removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
+			$(".row").css("margin-top", "0");
+			showing = false
+		}else{
+			$(".btn").css("display", "inline");
+			$(this).removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
+			$(".row").css("margin-top", "15%");
+			showing = true;
+		}
+	});
+
 });
