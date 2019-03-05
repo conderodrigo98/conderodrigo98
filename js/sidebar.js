@@ -34,12 +34,14 @@ $(document).ready(()=>{
 		if(showing){
 			$(".btn").css("display", "none");
 			$(this).removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
-			$(".row").css("margin-top", "0");
+			$(".row").removeClass("move_row");
+			$("h3").removeClass("move_h3");
 			showing = false
 		}else{
 			$(".btn").css("display", "inline");
 			$(this).removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
-			$(".row").css("margin-top", "15%");
+			$(".row").addClass("move_row");
+			$("h3").addClass("move_h3");
 			showing = true;
 		}
 	});

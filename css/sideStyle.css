@@ -17,6 +17,10 @@ body{
 	margin-left: 20%;
 }
 
+.move_row{
+	margin-top: 15%;
+}
+
 h1{
 	background: -webkit-linear-gradient(cyan, magenta);
 	-webkit-background-clip: text;
@@ -65,6 +69,10 @@ a:hover{
 	position: fixed;
 	top: 1%;
 	right: 5%;
+}
+
+.move_h3{
+	margin-top: 33%;
 }
 
 @media screen and (max-width: 1440px){
