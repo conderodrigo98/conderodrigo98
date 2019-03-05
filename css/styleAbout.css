@@ -17,8 +17,6 @@ p{
 	color: grey;
 	text-align: center;
 	margin-left: 10%;
-}
-p:first-of-type{
 	margin-top: 25%;
 }
 
@@ -28,4 +26,23 @@ p:first-of-type{
 	-webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 1150px){
+	p{
+		font-size: 1.75rem;
+	}
+	img{
+		margin-left: 20%;
+	}
+}
+@media screen and (max-width: 850px){
+	body{
+		overflow-y: visible;
+	}
+	img{
+		margin-left: 0;
+	}
+	p{
+		margin-left: 0;
+	}
+}
 

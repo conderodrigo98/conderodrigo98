@@ -28,4 +28,22 @@ $(document).ready(()=>{
 		$(this).css("background-color", "white").css("text-align", "left");
 	});
 
+	//mobile menu dropdown
+	var showing = false;
+	$("#show_bar").click(function(){
+		if(showing){
+			$(".btn").css("display", "none");
+			$(this).removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
+			$(".row").removeClass("move_row");
+			$("h3").removeClass("move_h3");
+			showing = false
+		}else{
+			$(".btn").css("display", "inline");
+			$(this).removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
+			$(".row").addClass("move_row");
+			$("h3").addClass("move_h3");
+			showing = true;
+		}
+	});
+
 });

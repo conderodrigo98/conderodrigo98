@@ -1,10 +1,10 @@
-.row{
-	margin-left: 20%;
+body{
+	overflow-x: hidden;
 }
 
 img{
 	width: 87.5%;
-	height: auto;
+	min-width: 320px
 }
 
 p{
@@ -23,8 +23,27 @@ span{
 	font-weight: 500;
 }
 
-i{
+.fa-plus{
 	margin-left: 85%;
 	margin-top: 20%;
 	font-size: 4rem;
+}
+
+@media screen and (max-width: 1024px){
+	.row{
+		margin-top: 10%;
+	}
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.row{
+		margin-top: 20%;
+	}
+	.move_row{
+		margin-top: 40% !important;	
+	}
 }
