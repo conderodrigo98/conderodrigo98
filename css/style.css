@@ -1,73 +1,41 @@
-body{
-	background-color: white;
+body {
+	background-color: #00F0B5;
+	color: #1E1E24;
+	font-family: 'Montserrat';
 }
 
-h1{
-	background: -webkit-linear-gradient(cyan, magenta);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-align: center;
-	font-size: 7rem;
-	margin: 15% 0 2% 0;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 100;
-	visibility: hidden;
+.my-name {
+	color: #F15025;
+	font-weight: bold;
 }
 
-.invert{
-	background: -webkit-linear-gradient(magenta, cyan);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.front-icon {
+	width: 10%;
 }
 
-
-h2{
-	text-align: center;
-	visibility: hidden;
-	font-family: 'Oswald', sans-serif;
-	margin-bottom: 5%;
-	color: grey;
+.front-down-puller {
+	width: 15%;
+	color: #7494EA;
 }
 
-.subs{
-	margin-bottom: 2%;
+.with-background {
+	background-image: url("../imgs/background.jpg");
+	padding-bottom: 10%;
 }
 
-.btn{
-	visibility: hidden;
-	background-color: transparent;
-	border-color: cyan;
-	z-index: 100;
-	margin-right: 0.5%;
+.with-background h1 {
+	font-size: 4rem;
+	font-weight: bold;
 }
 
-.buttons{
-	text-align: center;
+.with-background p {
+	font-weight: bold;
+	background-color: rgba(116, 148, 234, 0.6);
 }
 
-a{
-	text-decoration: none;
-	color: magenta;
-}
-a:hover{
-	text-decoration: none;
-	color: cyan;
-}
+/* Font declarations */
 
-@media (max-width: 480px){
-	h1{
-		font-size: 5rem;
-	}
-	.btn{
-		margin-bottom: 10%;
-
-	}
-}
-@media screen and (max-width: 340px){
-	h1{
-		font-size: 4rem;
-	}
-	h2{
-		font-size: 1.5rem;
-	}
+@font-face {
+	font-family: "Montserrat";
+	src: url("./../lib/Montserrat/Montserrat-VariableFont_wght.ttf") format("opentype");
 }
