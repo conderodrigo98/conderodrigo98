@@ -30,7 +30,7 @@ function init() {
 }
 
 function configureCardFlip() {
-    var hammer = new Hammer(document);
+    var hammer = new Hammer(document.querySelector("body"));
     hammer.on("swipeleft swiperight", function (ev) {
         if (isMainCardFlipped) {
             mainCard.classList.add('flip');
