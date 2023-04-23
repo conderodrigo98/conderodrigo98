@@ -8,6 +8,7 @@
 	<link href="./lib/bootstrap-5.2.2/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="./lib/bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+	<script src="./lib/hammer.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </head>
 
@@ -59,10 +60,20 @@
 							</a>
 						</li>
 					</ul>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-						class="bi bi-arrow-down-right flip-arrow" viewBox="0 0 16 16" id="frontArrow">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center" id="arrow">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-arrow-left-short" viewBox="0 0 16 16">
 						<path fill-rule="evenodd"
-							d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z" />
+							d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+					</svg>
+					swipe to see more
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+						<path fill-rule="evenodd"
+							d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
 					</svg>
 				</div>
 			</div>
@@ -71,15 +82,17 @@
 		<div class="card-body card-back">
 			<div class="row mt-2">
 				<div class="col-12">
-					<p>Hey there! I’m <bold class="fw-bold">Rodrigo Conde</bold> - a <bold class="fw-bold">software
+					<p>Hey there! I’m <bold class="fw-bold">Rodrigo Conde</bold> - a <bold class="fw-bold">
+							software
 							engineer</bold> who loves technology and science. I have <span
 							id="experience-years">3</span>+ years of experience (<span
 							id="experience-hours">31606</span> hours to
 						be
 						precise) <bold class="fw-bold">analysing,
-							designing, coding</bold> and <bold class="fw-bold">testing</bold> information systems.
+							designing, coding</bold> and <bold class="fw-bold">testing</bold> information
+						systems.
 						Currently, I'm responsible for <bold class="fw-bold">leading</bold> a
-						small team of
+						team of
 						developers
 						building
 						web applications.
@@ -94,19 +107,16 @@
 						machine learning, language processing and mathematical optimization are my core areas of
 						interests. My
 						main
-						business experience includes forestry, agronomy, logistics and business process modelling.
+						business experience includes forestry, agronomy, logistics and business process
+						modelling.
 					</p>
 					<p>
 						Want to know more? Feel free to <bold class="fw-bold">contact me</bold>, check my <bold
-							class="fw-bold">LinkedIn</bold> or browse my <bold class="fw-bold">github</bold> profile.
+							class="fw-bold">LinkedIn</bold> or browse my <bold class="fw-bold">github</bold>
+						profile.
 					</p>
 				</div>
 			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-				class="bi bi-arrow-down-right flip-arrow" viewBox="0 0 16 16" id="backArrow" style="position: sticky; left: 100%">
-				<path fill-rule="evenodd"
-					d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z" />
-			</svg>
 		</div>
 	</div>
 </div>

@@ -1,5 +1,4 @@
 var isMainCardFlipped = true;
-var mainCardFlipEnabled = true;
 var isFlipping = false;
 var mainCard = null;
 
@@ -25,48 +24,23 @@ function init() {
     mainCard.style.opacity = 1;
 
     setTimeout(_ => {
-        var frontArrow = document.getElementById("frontArrow");
-        frontArrow.classList.add("arrow_bounce");
-    }, 1000);
+        var arrows = document.getElementById("arrow");
+        arrows.classList.add("arrow_bounce");
+    }, 1500);
 }
 
 function configureCardFlip() {
-    const eventToFlip = isMobile() ? 'click' : 'mouseover';
-    mainCard.addEventListener(eventToFlip, event => onFlip(event));
-
-    mainCard.addEventListener('mouseleave', _ => {
-        if (!isFlipping) {
-            mainCardFlipEnabled = true;
+    var hammer = new Hammer(mainCard);
+    hammer.on("swipe pan", function (ev) {
+        if (isMainCardFlipped) {
+            mainCard.classList.add('flip');
+            mainCard.classList.remove('unflip');
+        } else {
+            mainCard.classList.add('unflip');
+            mainCard.classList.remove('flip');
         }
+        isMainCardFlipped = !isMainCardFlipped;
     });
-}
-
-function onFlip(event) {
-    if (isCursorInFlipZone(event, mainCard)) {
-        if (isMobile() || mainCardFlipEnabled) {
-            if (isMainCardFlipped) {
-                mainCard.classList.add('flip');
-                mainCard.classList.remove('unflip');
-            } else {
-                mainCard.classList.add('unflip');
-                mainCard.classList.remove('flip');
-            }
-            isMainCardFlipped = !isMainCardFlipped;
-            mainCardFlipEnabled = isMobile();
-            isFlipping = true;
-            setTimeout(_ => isFlipping = false, 1001);
-        }
-    }
-}
-
-function isCursorInFlipZone(event, mainCard) {
-    const cardPosition = mainCard.getBoundingClientRect();
-    const upperX = cardPosition.x + cardPosition.width;
-    const lowerX = upperX - cardPosition.width * 0.2;
-    const upperY = cardPosition.y + cardPosition.height;
-    const lowerY = upperY - cardPosition.height * 0.2;
-    return lowerX < event.clientX && event.clientX < upperX
-        && lowerY < event.clientY && event.clientY < upperY;
 }
 
 function isMobile() {
