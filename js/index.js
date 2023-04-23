@@ -31,7 +31,7 @@ function init() {
 
 function configureCardFlip() {
     var hammer = new Hammer(mainCard);
-    hammer.on("swipe pan", function (ev) {
+    hammer.on("swipeleft swiperight panleft panright", function (ev) {
         if (isMainCardFlipped) {
             mainCard.classList.add('flip');
             mainCard.classList.remove('unflip');
