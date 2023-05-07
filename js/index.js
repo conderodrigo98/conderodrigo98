@@ -44,7 +44,7 @@ function configureCardFlip() {
 }
 
 function isMobile() {
-    return window.innerWidth <= 576;
+    return window.innerWidth < 576;
 }
 
 function calculateExperience() {
